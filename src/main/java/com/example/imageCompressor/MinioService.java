@@ -7,6 +7,9 @@ import io.minio.PutObjectArgs;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import java.io.InputStream;
 
 @Service
@@ -14,6 +17,8 @@ public class MinioService {
 
     @Autowired
     private MinioClient minioClient;
+
+
 
     public void uploadFile(String bucketName, String objectName, InputStream inputStream, String contentType) {
         try {

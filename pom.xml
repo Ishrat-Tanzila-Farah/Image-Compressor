@@ -41,11 +41,6 @@
 			<scope>test</scope>
 		</dependency>
 
-		<dependency>
-			<groupId>org.springframework</groupId>
-			<artifactId>spring-web</artifactId>
-			<version>5.3.30</version> <!-- Use the version compatible with your Spring Boot -->
-		</dependency>
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
